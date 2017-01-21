@@ -1,2 +1,2 @@
 # Code_Wars
-my code kata soltuins
+my code kata solutions and notes
