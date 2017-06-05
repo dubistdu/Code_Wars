@@ -1,4 +1,4 @@
-# https://www.codewars.com/kata/ga-de-ry-po-lu-ki-cypher-vol-2/train/ruby
+# https://www.codewars.com/kata/ga-de-ry-po-lu-ki-cypher/train/ruby
 
 def encode(str)
   str.tr('gaderypolukiGADERYPOLUKI', 'agedyropulikAGEDYROPULIK')
