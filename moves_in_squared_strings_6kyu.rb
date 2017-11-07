@@ -1,4 +1,4 @@
-
+# https://www.codewars.com/kata/moves-in-squared-strings-iii/train/ruby
 #  enumarate legnth of array
 # They are the 0th character of each word
 # They are the 1st character of each word
