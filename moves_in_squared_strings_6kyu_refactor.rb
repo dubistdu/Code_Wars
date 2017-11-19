@@ -1,8 +1,9 @@
 # https://www.codewars.com/kata/moves-in-squared-strings-iii/train/ruby
-#refactoring using transpose
+# refactoring using 'transpose'
+# can also be done using 'zip'
 
 def diag_1_sym(string)
-  string.split("\n").map { |word| word.split("")}.transpose.map { |new| new.join("")}.join("\n")
+  string.split.map { |word| word.split("")}.transpose.map { |new| new.join("")}.join("\n")
 end
 
 def rot_90_clock(string)
