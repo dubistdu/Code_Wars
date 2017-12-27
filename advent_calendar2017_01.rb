@@ -17,7 +17,10 @@
 # Approach
 
 # Turn the list of digits into an array
+num =  digits.to_s.chars.map {|n| n.to_i}
 # Using each with index…
+num.map.with_index {|n,i| num[i] == num[i+1] ? num[i] : 0}
+
 # Before it turns last digit into “0”, (it will turn to 0 no matter what because it will try to match the index after the last index which is ‘nil’), save the last digit first to a separate variable then pop the last digit and compare it to first digit
 # if they match, return the match number if it doesnt, back to ‘0’…
 # Actually… need to compare first and last digit first in case 1 st doesn’t match the one next, it will turn 1st into ‘0’
