@@ -13,5 +13,5 @@ def order_weight(weights)
   # sort an anrray using sub array's both array items
   # make a new array using only the first array item.
   # combine them to a string
-  weight_h=weights.split(" ").map.with_index {|a,i| [a,a.split("").map {|a| a.to_i}.inject(:+)]}.sort_by(&:reverse).map {|a| a[0]}.join(" ")
+  weights.split(" ").map {|a| [a,a.split("").map {|a| a.to_i}.inject(:+)]}.sort_by(&:reverse).map {|a| a[0]}.join(" ")
 end
