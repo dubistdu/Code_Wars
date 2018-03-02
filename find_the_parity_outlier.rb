@@ -9,5 +9,5 @@
 # find an array that only contains one array item
 # return the value of the array
 def find_outlier(integers)
-  integers.partition { |a| a.even? }.find { |a| a.count == 1 }.first
+  integers.partition(&:even?).find { |a| a.count == 1 }.first 
 end
