@@ -1,3 +1,11 @@
+# killed = []
+# loop the following two until items = []
+# items = items.roate(k)
+# killed << items.pop
+
+# return killed
+
+
 def josephus(items,k)
   killed = []
   if items.length == 0
