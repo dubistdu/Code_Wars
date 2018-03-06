@@ -22,7 +22,7 @@
 #    end
 # end
 
-####  Refactor
+####  Refactor I
 def josephus(items,k)
   killed = []
   # loop the following two until items == []
