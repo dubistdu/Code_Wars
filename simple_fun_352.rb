@@ -9,7 +9,8 @@ def isValid(formula)
   return false if !formula.include?(7) && !formula.include?(8)
   # ^^^ why is it not
   # return false if !formula.include?(7) || !formula.include?(8)
-  # because...
+  # because only case it needs to return false is when BOTH are missing. which is exactly 
+  # !formula.include?(7) && !formula.include?(8)
   return false if formula.include?(1) && formula.include?(2)
   return false if formula.include?(3) && formula.include?(4)
   return false if (formula.include?(5) && !formula.include?(6)) || (formula.include?(6) && !formula.include?(5))
@@ -21,7 +22,7 @@ end
 # true
 # error -e:9: warning: else without rescue is useless
 
-## Original method
+## Original method (doesn't pass some tests for the reasons listed below)
 # def isValid(formula)
 #
 #   if !formula.include?(7&&8)
