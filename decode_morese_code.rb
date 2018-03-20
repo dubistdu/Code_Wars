@@ -1,10 +1,5 @@
-
 def decodeMorse(morseCode)
-
-  morseCode = morseCode.strip.split("  ").map{|code| code.split.map{|letter| MORSE_CODE[letter]}.join}
-
-  morseCode = morseCode.join(" ")
-
+  morseCode.strip.split("  ").map { |code| code.split.map { |letter| MORSE_CODE[ letter ] }.join }.join(" ")
 end
 
 # kata link
