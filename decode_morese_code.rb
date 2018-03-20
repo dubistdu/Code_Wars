@@ -18,16 +18,3 @@ end
 
 #     english_words.join(" ")
 # end
-
-# **************Gavin*********************
-# def decodeMorse(morseCode)
-#   morseCode.strip.split("  ").map { |word| word.split.map { |letter| MORSE_CODE[letter] }.join }.join(" ")
-# end
-
-# I would split on the word separator to get the words
-# Then I would process each word by splitting on a single space to get the letters
-# Translate each of those
-# join them (no spaces)
-# then join the resulting words with a single space
-# strip is used for some that has space at the front of the string. get rid of them first before splitting a string
-# be careful of spacing. It' mostly two not one. It will make a difference
