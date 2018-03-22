@@ -7,8 +7,7 @@ def nbr_of_laps(x, y)
   # compare x,y select smaller number of the two
   # multiply smaller number until it is dividable by the larger number and the remainder is 0
 
-  short = [x,y].min
-  long = [x,y].max
+  short, long = [x, y].minmax
 
   i = 1
   until ((short * i) % long) == 0
