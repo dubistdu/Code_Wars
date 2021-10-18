@@ -13,6 +13,7 @@
 # Test.assert_equals(who_is_next(names, 52), "Penny")
 # Test.assert_equals(who_is_next(names, 7230702951), "Leonard")
 
+
 def who_is_next(names, r)
   r -= 1
   while r >= names.size
